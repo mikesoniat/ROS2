@@ -4,10 +4,10 @@ from rclpy.node import Node
 
 from example_interfaces.srv import AddTwoInts
 
-class AddTwoIntsServerNode(Node): # CLASS NAME
+class AddTwoIntsServerNode(Node): 
 
     def __init__(self):
-        super().__init__("add_two_ints_server") # NODE NAME
+        super().__init__("add_two_ints_server") 
         self.server = self.create_service(AddTwoInts, "add_two_ints", self.callback_add_two_ints)
         self.get_logger().info("Add two ints server has been started.")
 
@@ -19,7 +19,7 @@ class AddTwoIntsServerNode(Node): # CLASS NAME
 
 def main(args=None):
     rclpy.init(args=args) # initialize ROS communication
-    node = AddTwoIntsServerNode() # CLASS NAME
+    node = AddTwoIntsServerNode() 
     rclpy.spin(node)
     rclpy.shutdown() 
 
