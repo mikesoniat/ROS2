@@ -8,9 +8,9 @@ from example_interfaces.srv import SetBool
 class NumberCounter(Node): # CLASS NAME
 
     def __init__(self):
-        super().__init__("number_counter") # NODE NAME
+        super().__init__("number_counter") 
         self.counter_ = 0
-        # start service
+        # start service to reset counter
         self.server = self.create_service(SetBool, "reset_counter", self.callback_reset_counter)
         self.get_logger().info("Reset Counter server has been started.")
         # start subscription        
@@ -27,8 +27,13 @@ class NumberCounter(Node): # CLASS NAME
         self.get_logger().info(str(self.counter_))
 
     def callback_reset_counter(self, request, response):
-        if request.data == 1:
+        if request.data:
             self.counter_ = 0
+            response.success = True
+            response.message = "Counter has been reset"
+        else:
+            response.success = False
+            response.mesage = "Counter has not been reset"
         return response          
 
 def main(args=None):
