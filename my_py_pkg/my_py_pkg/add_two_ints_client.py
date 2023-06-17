@@ -7,7 +7,7 @@ from example_interfaces.srv import AddTwoInts
 class AddTwoIntsClientNode(Node): # CLASS NAME
 
     def __init__(self):
-        super().__init__("add_two_inst_client")
+        super().__init__("add_two_inst_client") 
         self.call_add_two_ints_server(6, 7)
         self.call_add_two_ints_server(5, 2)
         self.call_add_two_ints_server(3, 1)

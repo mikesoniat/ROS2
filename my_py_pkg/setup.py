@@ -30,7 +30,9 @@ setup(
             "add_two_ints_client = my_py_pkg.add_two_ints_client:main",
             "reset_counter_client = my_py_pkg.reset_counter_client:main",
             "hw_status_publisher = my_py_pkg.hw_status_publisher:main",
-            "temp_sensor_publisher = my_py_pkg.temp_sensor_publisher:main"
+            "temp_sensor_publisher = my_py_pkg.temp_sensor_publisher:main",
+            "led_panel = my_py_pkg.led_panel:main",
+            "battery = my_py_pkg.battery:main"
         ],
     },
 )
