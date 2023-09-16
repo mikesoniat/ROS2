@@ -1,0 +1,2 @@
+Invoking command in '/home/mikes/ros2_ws/src/build/ruxonros2_description': /usr/bin/cmake /home/mikes/ros2_ws/src/ROS-main -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/mikes/ros2_ws/src/install/ruxonros2_description
+Invoked command in '/home/mikes/ros2_ws/src/build/ruxonros2_description' returned '1': /usr/bin/cmake /home/mikes/ros2_ws/src/ROS-main -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/mikes/ros2_ws/src/install/ruxonros2_description

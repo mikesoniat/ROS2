@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from my_robot_interfaces/msg/LedState.msg
+// generated code does not contain a copyright notice
+
+
+module my_robot_interfaces {
+  module msg {
+    struct LedState {
+      boolean led_1;
+
+      boolean led_2;
+
+      boolean led_3;
+    };
+  };
+};
